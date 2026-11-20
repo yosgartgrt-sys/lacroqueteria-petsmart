@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eaf7ff;
+    color: #173c55;
+}
+
+header {
+    background-color: white;
+    padding: 15px;
+    border-bottom: 4px solid #168ac4;
+}
+
+/* Espacio del logotipo y nombre del negocio */
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Foto pequeña y redonda */
+.logo {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #168ac4;
+    background-color: white;
+}
+
+.marca h1 {
+    margin: 0;
+    color: #08669b;
+}
+
+.marca p {
+    margin: 5px 0;
+}
+
+h1, h2 {
+    color: #08669b;
+}
+
+/* Menú de navegación */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+nav a, .boton {
+    display: inline-block;
+    background-color: #087fb5;
+    color: white;
+    text-decoration: none;
+    padding: 11px 15px;
+    border-radius: 10px;
+    margin: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+nav a:hover, .boton:hover {
+    background-color: #064e78;
+}
+
+/* Contenido principal */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 25px auto;
+}
+
+/* Portada de cada página */
+.portada {
+    background-color: #c8edff;
+    background-image: linear-gradient(
+        rgba(220, 245, 255, 0.75),
+        rgba(220, 245, 255, 0.75)
+    ), url("imagenes/fondo.jpg");
+
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    border-radius: 18px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.portada img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 15px;
+}
+
+/* Secciones blancas */
+.contenido {
+    background-color: white;
+    padding: 22px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+/* Tarjetas de productos */
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.tarjeta {
+    background-color: #f5fcff;
+    border: 2px solid #b5e3f7;
+    border-radius: 12px;
+    padding: 15px;
+    width: 250px;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Mapa de Google */
+.mapa {
+    display: block;
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 12px;
+}
+
+/* Campos de formulario */
+input, textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #80c9e8;
+    border-radius: 8px;
+}
+
+/* Parte inferior */
+footer {
+    text-align: center;
+    color: white;
+    background-color: #075b88;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 600px) {
+    main {
+        width: 94%;
+    }
+
+    .portada {
+        padding: 18px;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .tarjeta {
+        width: 100%;
+    }
+}
